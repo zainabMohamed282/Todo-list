@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BOM Challenge</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .form{
+            text-align: center;
+            background-color: rgb(224, 224, 224);
+            padding: 30px ;
+        }
+        .add-task {
+        background-color: #eee;
+        margin-top: 20px;
+        border-radius: 6px;
+        padding: 20px;
+    }
+    .add-task .task {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        padding: 10px;
+        border-radius: 6px;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+        .btn{
+            background-color: rgb(30, 18, 92);
+            color: antiquewhite;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+        .txt{
+            padding: 8px;
+            width: 20%;
+        }
+        .add-task.task:hover {
+        background-color: #f7f7f7;
+      }
+      .add-task .task.done {
+        opacity: 0.5;
+      }
+        .add-task .task span {
+        font-weight: bold;
+        font-size: 20px;
+        background-color: red;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="form">
+        <input type="text" class="txt">
+        <input type="submit" value="ADD" class="btn">
+    </div>
+    <div class="add-task"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
